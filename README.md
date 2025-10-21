@@ -22,29 +22,25 @@
 
 ![Admin Page](https://github.com/Krish-Depani/Decentralized-Voting-System-Using-Ethereum-Blockchain/blob/main/public/admin%20ss.png)
 
-![Voter Page](https://github.com/Yuvraj27-5/Decentralized-Voting-System-Using-Ethereum-Blockchain/blob/main/public/index%20ss.png)
+![Voter Page](https://github.com/Krish-Depani/Decentralized-Voting-System-Using-Ethereum-Blockchain/blob/main/public/index%20ss.png)
 
 ## Installation
 
 1. Open a terminal.
 
-2. Clone the repository by using the command
-        
-        git clone https://github.com/Krish-Depani/Decentralized-Voting-System-Using-Ethereum-Blockchain.git
+2. Download and install [Ganache](https://trufflesuite.com/ganache/).
 
-3. Download and install [Ganache](https://trufflesuite.com/ganache/).
+3. Create a workspace named <b>developement</b>, in the truffle projects section add `truffle-config.js` by clicking `ADD PROJECT` button.
 
-4. Create a workspace named <b>developement</b>, in the truffle projects section add `truffle-config.js` by clicking `ADD PROJECT` button.
+4. Download [Metamask](https://metamask.io/download/) extension for the browser.
 
-5. Download [Metamask](https://metamask.io/download/) extension for the browser.
+5. Now create wallet (if you don't have one), then import accounts from ganache.
 
-6. Now create wallet (if you don't have one), then import accounts from ganache.
+6. Add network to the metamask. ( Network name - Localhost 7575, RPC URl - http://localhost:7545, Chain ID - 1337, Currency symbol - ETH)
 
-7. Add network to the metamask. ( Network name - Localhost 7575, RPC URl - http://localhost:7545, Chain ID - 1337, Currency symbol - ETH)
+7. Open MySQL and create database named <b>voter_db</b>. (DON'T USE XAMPP)
 
-8. Open MySQL and create database named <b>voter_db</b>. (DON'T USE XAMPP)
-
-9. In the database created, create new table named <b>voters</b> in the given format and add some values.
+8. In the database created, create new table named <b>voters</b> in the given format and add some values.
 
            CREATE TABLE voters (
            voter_id VARCHAR(36) PRIMARY KEY NOT NULL,
@@ -59,15 +55,15 @@
         |                                      |       |           |
         +--------------------------------------+-------+-----------+
 
-12. Install truffle globally
+9. Install truffle globally
     
         npm install -g truffle
 
-14. Go to the root directory of repo and install node modules
+10. Go to the root directory of repo and install node modules
 
         npm install
 
-15. Install python dependencies
+11. Install python dependencies
 
         pip install fastapi mysql-connector-python pydantic python-dotenv uvicorn uvicorn[standard] PyJWT
 
