@@ -1,3 +1,8 @@
 node_modules
 build
 package-lock.json
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
